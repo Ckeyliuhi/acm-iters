@@ -18,7 +18,7 @@ struct Fenwick {
         }
     }
 
-    int ask (int x) {
+    i64 ask (int x) {
         i64 res = 0;
         for ( ; x; x -= lowbit(x)) {
             res += tree[x];
